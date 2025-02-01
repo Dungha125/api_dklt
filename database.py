@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
-import pymysql
+import os
 
 DATABASE_URL = "mysql+pymysql://root:12052004@localhost:3306/users"
 

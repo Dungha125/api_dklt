@@ -1,0 +1,11 @@
+services:
+  - name: fastapi-app
+    type: web
+    env: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
+    envVars:
+      - key: DATABASE_URL
+        sync: false  # Đặt giá trị này trực tiếp trên trang Render
